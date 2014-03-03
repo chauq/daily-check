@@ -1,10 +1,16 @@
 require 'capybara'
 require 'rubygems'
 require 'win32/screenshot'
+require "selenium-webdriver"
 
 class Check
 	
 	def initialize
+		#This changes which browser the test will run, need to change the name of the browser after the browser:)
+		Capybara.register_driver :selenium do |app|
+			Capybara::Selenium::Driver.new(app, browser: :internet_explorer)
+		end
+
 		@session = Capybara::Session.new(:selenium)
 	end
 	
@@ -12,13 +18,13 @@ class Check
 	#Will sign into the mobile or the main site since the text buttons are different 
 		if site == "http://www"
 			@session.click_on("Sign in or register")
-			@session.fill_in("Email", {:with =>"test@streams.com"})
-			@session.fill_in("Password", {:with =>"cologi37"})
+			@session.fill_in("Email", {:with =>"test...."})
+			@session.fill_in("Password", {:with =>"......."})
 			@session.click_on("Login")
 		else
 			@session.click_on("Sign in")
-			@session.fill_in("Email", {:with =>"test@streams.com"})
-			@session.fill_in("Password", {:with =>"cologi37"})
+			@session.fill_in("Email", {:with =>"test......"})
+			@session.fill_in("Password", {:with =>"......."})
 			@session.click_on("Log in")
 			#Have to go back to the channel site on mobile, since it take you back to the channel list page
 			@session.visit site + ".livestation.com/en/channels/" + chan
@@ -67,5 +73,4 @@ site.each do |site|
 	end
 end
 	
-exit(-1)
 exit(-1)
