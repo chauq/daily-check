@@ -8,7 +8,7 @@ class Check
 	def initialize
 		#This changes which browser the test will run, need to change the name of the browser after the browser:)
 		Capybara.register_driver :selenium do |app|
-			Capybara::Selenium::Driver.new(app, browser: :internet_explorer)
+			Capybara::Selenium::Driver.new(app, browser: :chrome)
 		end
 
 		@session = Capybara::Session.new(:selenium)
@@ -18,13 +18,13 @@ class Check
 	#Will sign into the mobile or the main site since the text buttons are different 
 		if site == "http://www"
 			@session.click_on("Sign in or register")
-			@session.fill_in("Email", {:with =>"test...."})
-			@session.fill_in("Password", {:with =>"......."})
+			@session.fill_in("Email", {:with =>"test....."})
+			@session.fill_in("Password", {:with =>"....."})
 			@session.click_on("Login")
 		else
 			@session.click_on("Sign in")
 			@session.fill_in("Email", {:with =>"test......"})
-			@session.fill_in("Password", {:with =>"......."})
+			@session.fill_in("Password", {:with =>"....."})
 			@session.click_on("Log in")
 			#Have to go back to the channel site on mobile, since it take you back to the channel list page
 			@session.visit site + ".livestation.com/en/channels/" + chan
@@ -33,10 +33,12 @@ class Check
 	
 	def screenshot (site, chan)
 		if site == "http://www"
-			Win32::Screenshot::Take.of(:foreground).write(chan + " www.png")
+			@session.save_screenshot(chan + " www.png")
+			#Win32::Screenshot::Take.of(:foreground).write(chan + " www.png")
 			puts "Screenshot of " + chan + " taken on " + site
 		else
-			Win32::Screenshot::Take.of(:foreground).write(chan + " m.png")
+			@session.save_screenshot(chan + " m.png")
+			#Win32::Screenshot::Take.of(:foreground).write(chan + " m.png")
 			puts "Screenshot of " + chan + " taken on " + site
 		end
 	end
@@ -53,9 +55,12 @@ class Check
 			puts "Working!"
 			screenshot site, chan
 			@session.reset!
+			#@session.execute_script "window.close();"
 		else
-			puts "Something has gone wrong :("
+			puts "Something has gone wrong :'("
 			@session.reset!
+			#@session.execute_script "window.close();"
+			return
 		end 		
 	end
 	
