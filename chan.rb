@@ -1,6 +1,5 @@
 require 'capybara'
 require 'rubygems'
-require 'win32/screenshot'
 
 class Check
 	
@@ -10,8 +9,8 @@ class Check
 	
 	def sign_in
 		@session.click_on("Sign in or register")
-		@session.fill_in("Email", {:with =>"test@streams.com"})
-		@session.fill_in("Password", {:with =>"cologi37"})
+		@session.fill_in("Email", {:with =>"test....,"})
+		@session.fill_in("Password", {:with =>"......"})
 		@session.click_on("Login")
 	end
 
@@ -25,7 +24,7 @@ class Check
 		if @session.has_content?("About Livestation")
 			puts "Working!"
 			sleep 10
-			Win32::Screenshot::Take.of(:foreground).write(chan + ".png")
+			@session.save_screenshot(chan + ".png")
 			puts "Screenshot of " + chan + " taken"
 			@session.reset!
 		else
