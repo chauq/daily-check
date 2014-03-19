@@ -2,6 +2,7 @@ require 'capybara'
 require 'rubygems'
 require "selenium-webdriver"
 require './log_in'
+require './record'
 
 class Check
 	
@@ -12,18 +13,7 @@ class Check
 		end
 		
 		@session = Capybara::Session.new(:selenium)
-	end
-	
-	def screenshot (site, chan)
-		if site == "http://www"
-			@session.save_screenshot(chan + " www.png")
-			puts "Screenshot of " + chan + " taken on " + site
-		else
-			@session.save_screenshot(chan + " m.png")
-			puts "Screenshot of " + chan + " taken on " + site
-		end
-	end
-	
+	end	
 	
 	def channel (site, chan)
 		#This opens the channel page
@@ -32,14 +22,16 @@ class Check
 		log_in = Log_in.new(site, chan, @session)
 		log_in.sign_in
 		sleep 10
+		record = Record.new(site, chan, @session)
 		#Check if the channel page is up by seeing if the word "Livestation" or "You May Like" is on the page
 		if @session.has_content?("Livestation") || @session.has_content?("You May Like")
 			puts "Working!"
-			screenshot site, chan
+			record.screenshot
 			@session.reset!
 			#@session.execute_script "window.close();"
 		else
 			puts "Something has gone wrong :'("
+			record.screenshot
 			@session.reset!
 			#@session.execute_script "window.close();"
 			return
