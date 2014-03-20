@@ -9,7 +9,7 @@ class Check
 	def initialize
 		#This changes which browser the test will run, need to change the name of the browser after the browser:)
 		Capybara.register_driver :selenium do |app|
-			Capybara::Selenium::Driver.new(app, browser: :firefox)
+			Capybara::Selenium::Driver.new(app, browser: :internet_explorer)
 		end
 		
 		@session = Capybara::Session.new(:selenium)
@@ -19,8 +19,10 @@ class Check
 		#This opens the channel page
     	@session.visit site + ".livestation.com/en/channels/" + chan
 		#Sign in in order to see the Premium channel
-		log_in = Log_in.new(site, chan, @session)
-		log_in.sign_in
+		if @session.has_content?("Sign in")
+			log_in = Log_in.new(site, chan, @session)
+			log_in.sign_in
+		end
 		sleep 10
 		record = Record.new(site, chan, @session)
 		#Check if the channel page is up by seeing if the word "Livestation" or "You May Like" is on the page
