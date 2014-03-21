@@ -5,10 +5,10 @@ class Record
 
 	def screenshot
 		if @site == "http://www"
-			@session.save_screenshot(@chan + " www.png")
+			@session.save_screenshot("./image/" + @chan + " www.png")
 			puts "Screenshot of " + @chan + " taken on " + @site
 		else
-			@session.save_screenshot(@chan + " m.png")
+			@session.save_screenshot("./image/" + @chan + " m.png")
 			puts "Screenshot of " + @chan + " taken on " + @site
 		end
 	end
