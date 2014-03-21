@@ -7,9 +7,9 @@ require './record'
 class Check
 	
 	def initialize
-		#This changes which browser the test will run, need to change the name of the browser after the browser:)
+		#This changes which browser the test will run, need to change the name of the browser after the "app, browser:" part")
 		Capybara.register_driver :selenium do |app|
-			Capybara::Selenium::Driver.new(app, browser: :internet_explorer)
+			Capybara::Selenium::Driver.new(app, browser: :chrome)
 		end
 		
 		@session = Capybara::Session.new(:selenium)
@@ -24,22 +24,18 @@ class Check
 			log_in.sign_in
 		end
 		sleep 10
-		record = Record.new(site, chan, @session)
 		#Check if the channel page is up by seeing if the word "Livestation" or "You May Like" is on the page
 		if @session.has_content?("Livestation") || @session.has_content?("You May Like")
 			puts "Working!"
-			record.screenshot
-			@session.reset!
-			#@session.execute_script "window.close();"
 		else
 			puts "Something has gone wrong :'("
-			record.screenshot
-			@session.reset!
-			#@session.execute_script "window.close();"
 			return
-		end 		
-	end
-	
+		end
+		record = Record.new(site, chan, @session)
+		record.screenshot
+		@session.reset!
+		#@session.execute_script "window.close();"
+	end	
 end
 	
 #The list for the daily checks
