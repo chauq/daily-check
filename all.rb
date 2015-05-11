@@ -59,7 +59,7 @@ bbcwn.check
 
 #The list for the daily checks
 chan = ["cnni", "cnbc", "bbc-world", "libyatv"]
-site = ["http://www"]
+site = ["http://m", "http://www"]
 
 #
 #check both mobile and website

@@ -40,6 +40,8 @@ class Check
     		end
 		sleep 10
 		@driver.save_screenshot("./no sub/" + chan + ".png")
+		sleep 15
+		@driver.save_screenshot("./no sub/" + chan + "2.png")
 		@driver.quit
 	end	
 	
