@@ -9,7 +9,7 @@ class Check
 	def initialize
 		#This changes which browser the test will run, need to change the name of the browser after the "app, browser:" part")
 		Capybara.register_driver :selenium do |app|
-			Capybara::Selenium::Driver.new(app, browser: :chrome)
+			Capybara::Selenium::Driver.new(app, browser: :firefox)
 		end
 		
 		@session = Capybara::Session.new(:selenium)
@@ -46,7 +46,7 @@ site = ["http://m", "http://www"]
 site.each do |site|
 	chan.each do |chan|
 		puts "Checking " + chan + " on " + site + ":"
-		Check.new.channel(site, chan)
+		Check.new.channel(chan, site)
 	end
 end
 	

@@ -1,0 +1,426 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Ar",
+				"arabic"
+			],
+			[
+				"re",
+				"record"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"Lo",
+				"Log_in"
+			],
+			[
+				"lo",
+				"log_in"
+			],
+			[
+				"de",
+				"def	def … end"
+			],
+			[
+				"g",
+				"guess"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"ma",
+				"mark"
+			],
+			[
+				"p",
+				"puts"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lsng_check.rb",
+			"settings":
+			{
+				"buffer_size": 1485,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "all.rb",
+			"settings":
+			{
+				"buffer_size": 1697,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "arabic.rb",
+			"settings":
+			{
+				"buffer_size": 656,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bbcwn.rb",
+			"settings":
+			{
+				"buffer_size": 306,
+				"line_ending": "Unix",
+				"name": "require \"selenium-webdriver\""
+			}
+		},
+		{
+			"file": "nosub.rb",
+			"settings":
+			{
+				"buffer_size": 3119,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test.rb",
+			"settings":
+			{
+				"buffer_size": 886,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mikeo/Documents/work/Livestation/source/git/daily-check/.gitignore",
+		"/Users/mikeo/Documents/work/Livestation/source/git/daily-check/channel_checker.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/daily-check/test.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/daily-check/log_in.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/daily-check/nosub.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/daily-check/chanandm.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/daily-check/record.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/features/search.feature",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/features/codebreaker_submits_guess.featur",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/bin/codebreaker",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/spec/codebreaker/game_spec.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/lib/codebreaker.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/lib/codebreaker/game.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/features/support/env.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/spec/spec_helper.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/features/step_definitions/codebreaker_steps.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/features/codebreaker_submits_guess.feature",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/features/codebreaker_starts_game.feature",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/codebreaker/lib/codebreaker/codebreaker.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/messages/features/support/factories.rb",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/messages/features/see_messages.feature",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/messages/squeaker/Gemfile",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/messages/gemfile",
+		"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/messages/features/step_definitions/user_steps.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"browser",
+			"driver",
+			"sublime"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@driver"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lsng_check.rb",
+					"settings":
+					{
+						"buffer_size": 1485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								778,
+								778
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 37.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "all.rb",
+					"settings":
+					{
+						"buffer_size": 1697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "arabic.rb",
+					"settings":
+					{
+						"buffer_size": 656,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								320,
+								356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "bbcwn.rb",
+					"settings":
+					{
+						"buffer_size": 306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								297
+							]
+						],
+						"settings":
+						{
+							"auto_name": "require \"selenium-webdriver\"",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "nosub.rb",
+					"settings":
+					{
+						"buffer_size": 3119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								665,
+								665
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "test.rb",
+					"settings":
+					{
+						"buffer_size": 886,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								715,
+								723
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/mikeo/Documents/work/Livestation/source/git/cucumber/messages/message.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 192.0,
+	"status_bar_visible": true
+}

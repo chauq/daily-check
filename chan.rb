@@ -1,5 +1,6 @@
 require 'capybara'
 require 'rubygems'
+require "selenium-webdriver"
 
 class Check
 	

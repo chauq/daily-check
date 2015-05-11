@@ -1,25 +1,35 @@
 require 'capybara'
 require 'rubygems'
-require 'win32/screenshot'
 require 'selenium-webdriver'
 
-driver = Selenium::WebDriver.for :firefox
+class Arabic
 
-driver.get "http://www.alrayyan.tv/arabic/Pages/AlrayanLive.aspx"
-sleep 5
-driver.save_screenshot("./image/Alrayan.png")
+	def initialize(driver)
+		@driver = driver
+	end
 
-driver.get "http://tv.kuwait.tt/"
-driver.find_element(:id => "image30").click
-sleep 5
-driver.save_screenshot("./image/Alwan.png")
+	def check
 
-driver.find_element(:id => "image31").click
-sleep 5
-driver.save_screenshot("./image/Alwan2.png")
+		@driver.get "http://www.alrayyan.tv/arabic/Pages/AlrayanLive.aspx"
+		sleep 5
+		@driver.save_screenshot("./image/Alrayan.png")
 
-driver.find_element(:id => "image32").click
-sleep 5
-driver.save_screenshot("./image/Alwanplus.png")
+		@driver.get "http://tv.kuwait.tt/"
 
-driver.quit
+		@driver.find_element(:id => "image31").click
+		sleep 5
+		@driver.save_screenshot("./image/Alwan2.png")
+
+		@driver.find_element(:id => "image32").click
+		sleep 5
+		@driver.save_screenshot("./image/Alwanplus.png")
+
+		@driver.find_element(:id => "image30").click
+		sleep 5
+		@driver.save_screenshot("./image/Alwan.png")
+
+		@driver.quit
+	end
+
+end
+
